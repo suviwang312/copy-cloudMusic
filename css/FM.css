@@ -1,0 +1,161 @@
+body{
+    /*background-image: linear-gradient(160deg, #b100ff 20%,#00b3ff 80%);*/
+    /*background-image: linear-gradient(160deg, #ffce00 10%,#ff8b00 80%);*/
+    /*height: 100%;*/
+    background: url("../images/bg-jianbian.jpg");
+}
+header{
+    width: 100%;
+    height: 3rem;
+    /*background-color: #99a1a7;*/
+    overflow: hidden;
+}
+header img{
+    width: 1.7rem;
+    padding: 0.3rem;
+    float: left;
+}
+header div{
+    width: 38%;
+    height: 3rem;
+    /*background-color: #eeeeee;*/
+    float: left;
+}
+.header-div img{
+    width: 20%;
+    height: 1.5rem;
+    /*background-color: #ac2925;*/
+    margin-left: 40%;
+    margin-right: 24%;
+}
+.header-div p{
+    width: 100%;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #fff;
+}
+.header-span{
+    float: right;
+    width: 10%;
+    height: 3rem;
+    line-height: 3rem;
+    /*background-color: #fff;*/
+    text-align: center;
+    font-size: 2rem;
+    font-family: sans-serif Arial;
+    color: #fff;
+}
+main {
+    width: 100%;
+    height: 24rem;
+    margin-top: 2rem;
+    /*background-color: #eeeeee;*/
+}
+main img{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5%;
+}
+.main-p1{
+    width: 82%;
+    height: 1rem;
+    margin: 1rem auto 0.3rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+}
+.main-p2{
+    width: 30%;
+    height: 1rem;
+    margin: 0.6rem auto;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #99a1a7;
+}
+#audio-div{
+    width: 100%;
+    height: 4rem;
+    /*background-color: yellow;*/
+    margin-top: 2rem;
+}
+#music{
+    margin: 0 auto;
+    margin-left: 9%;
+}
+#footer{
+    width: 100%;
+    height: 3rem;
+    /*background-color: yellow;*/
+    margin-top: 1rem;
+}
+#footer img{
+    width: 2rem;
+    height: 2rem;
+    margin-top: 0.5rem;
+    padding-left: 2rem;
+}
+
+/*//////...点击之后显示效果*/
+
+.demo-txt{
+    position: absolute;
+    z-index: 6;
+    color: #000;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 58%;
+    /* margin: 0 auto; */
+    top: 41.5%;
+    /* left: 7.5%; */
+    /* margin-bottom: 30%; */
+    display: none;
+    /* padding: 10px; */
+    border-radius: 0.2rem;
+    opacity: 0.9;
+    box-shadow: 0 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.1);
+}
+.tishi{
+    width: 100%;
+    height: 3rem;
+    /*background-color: yellow;*/
+}
+.tishi p{
+    margin: 0 auto;
+    font-size: 1rem;
+    color: #2e2e2e;
+    padding: 0.2rem 0.3rem;
+}
+.demo-txt ul{
+    width: 100%;
+    list-style: none;
+    margin-top: 3rem;
+    height: 16rem;
+    /*background-color: #99a1a7;*/
+}
+#demo-txt-ul li{
+    width: 100%;
+    height: 2rem;
+    /*background-color: #e4b9b9;*/
+    margin-left: -45px;
+    overflow: hidden;
+}
+#demo-txt-ul img{
+    float: left;
+
+}
+#demo-txt-ul span{
+    float: left;
+    height: 2rem;line-height: 2rem;
+    font-size: 1rem;
+    font-family: Arial sans-serif;
+    color: #2e2e2e;
+}
+#close{
+    width: 60%;
+    height: 2rem;
+    /*background-color: #99a1a7;*/
+    margin-top: 1rem;
+    line-height: 2rem;
+    text-align: center;
+}

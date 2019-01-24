@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>me</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Cache-Control" content="max-age=180">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+    <!--<link rel="stylesheet" href="css/public.css">-->
+    <link rel="stylesheet" href="css/me.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/common.js"></script>
+    <style>
+
+
+        /*???????????json??????????*/
+        ul{
+            list-style: none;
+        }
+        ul,p,h3{
+            padding: 0;
+            margin: 0;
+        }
+        img{
+            border: none;
+            display: block;
+        }
+        .mlist{
+            width: 100%;
+            height: 16rem;
+            background-color: #eeeeee;
+            overflow: hidden;
+        }
+        .mlist img{
+            margin: 0 auto;
+            width: 100%;
+            height: 5.8rem;
+            /*height:3.5rem;*/
+            /*margin-right: 10px;*/
+        }
+        .mlist li{
+            border-bottom: 0.1rem solid #269abc;
+            padding-top: 0.3rem;
+            /*margin-bottom: 0.3rem;*/
+            position: relative;
+            height: 7.4rem;
+            float: left;
+            width: 30%;
+            margin-left: 0.5rem;
+        }
+
+        .mlist p{
+            font-size: 0.6rem;
+            /*line-height: 32px;*/
+            color: #2e2e2e;
+            padding-left: 0.3rem;
+            text-indent: 1em;
+            text-align: center;
+            height: 1.5rem;
+        }
+        a{
+            text-decoration: none;
+            color: #030;
+        }
+    </style>
+
+    <script>
+        var xmlhttp;
+        if (window.XMLHttpRequest)
+        {
+            //  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+            xmlhttp=new XMLHttpRequest();
+        }
+        else
+        {
+            // IE6, IE5 浏览器执行代码
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange=function()
+        {
+            if (xmlhttp.readyState==4 && xmlhttp.status==200)//成功的效果
+            {
+                // console.log(xmlhttp.responseText);//读ajax成功之后把ajax.txt放的位置。
+                // document.getElementById("box").innerHTML=xmlhttp.responseText;//读ajax成功之后把ajax.txt放的位置。
+
+                var data=JSON.parse(xmlhttp.responseText);//字符串变json对象
+
+                var mlist=document.querySelector(".mlist");
+
+                for (var i=0;i<data.length;i++){
+                    var hang=` <img src="${data[i].img}" alt="">
+                        <p>${data[i].p}</p>`;
+                    var newli=document.createElement("li");
+                    newli.innerHTML=hang;
+                    mlist.appendChild(newli);
+                }
+            }
+        };
+        // xmlhttp.open("GET","ajax.txt",true);
+        // txt?t="+Math.random()清除缓存,随机数是get请求可以，post不可以
+        xmlhttp.open("GET","js/ajax.json?t="+Math.random(),true);
+
+        // xmlhttp.open("POST","ajax.txt",true);
+        xmlhttp.send();//向服务器发送请求
+    </script>
+</head>
+<body>
+<!--h5标签,语义化加强。用法和div相同，可以多个存在，在不是id标签的情况下-->
+<header id="header">
+    <img src="images/2-cloud.png" alt="" class="fl header-img">
+    <span class="fl header-span">我的音乐</span>
+    <img src="images/1-list.png" alt="" class="fl header-img">
+    <div id="header-below">
+        <img src="images/1-disk.png" alt="" class="fl header-b-img">
+        <span class="fl header-b-span">淡淡的芦苇</span>
+        <span class="fr header-b-span header-b-span-special">会员中心</span>
+    </div>
+</header>
+<!--<nav id="nav"></nav>-->
+<!--<div id="slide"></div>-->
+<div style="clear: both"></div>
+<main id="main">
+    <div class="main-1">
+        <img src="images/2-music.png" alt="" class="main-1-img fl">
+        <span class="main-1-span-c fl">本地音乐</span>
+        <span class="main-1-span fl">7 </span>
+          <a href="local-music.html" style="width: 10%;height: 3rem;float: right;line-height: 3rem;">
+            <img src="images/right.png" alt=""  class="main-1-img" style="width: 60%;">
+          </a>
+    </div>
+    <div style="clear: both"></div>
+    <div class="main-1">
+        <img src="images/2-playing.png" alt="" class="main-1-img fl">
+        <span class="main-1-span-c fl">最近播放</span>
+        <span class="main-1-span fl">131 </span>
+        <img src="images/right.png" alt=""  class="main-1-img fr">
+    </div>
+    <div style="clear: both"></div>
+
+    <div class="main-1">
+        <img src="images/2-station.png" alt="" class="main-1-img fl">
+        <span class="main-1-span-c fl">我的电台</span>
+        <span class="main-1-span fl">0 </span>
+        <img src="images/right.png" alt=""  class="main-1-img fr">
+    </div>
+    <div style="clear: both"></div>
+
+    <div class="main-1">
+        <img src="images/2-collect.png" alt="" class="main-1-img fl">
+        <span class="main-1-span-c fl">我的收藏</span>
+        <span class="main-1-span fl">12 </span>
+        <img src="images/right.png" alt=""  class="main-1-img fr">
+    </div>
+    <div style="clear: both"></div>
+
+    <div class="main-1">
+        <img src="images/2-Sati.png" alt="" class="main-1-img fl">
+        <span class="main-1-span-c fl">Sati空间</span>
+        <span class="main-1-span fl"></span>
+        <img src="images/right.png" alt=""  class="main-1-img fr">
+    </div>
+    <div style="clear: both"></div>
+
+</main>
+<!--&lt;!&ndash;section里包含article&ndash;&gt;-->
+<!--<section id="xg">-->
+    <!---->
+<!--</section>-->
+<div id="showdiv" >
+    <a href="javascript:show()" id="change" style="float: left">➩</a>
+    <span style="float: left">我创建的歌单(8)</span>
+    <span style="float: right;text-align: right;">···</span>
+    <div id="hidediv" style="display:none">
+        <ul>
+            <li class="showdiv-li">
+                <img src="images/pic-9.JPG" alt="">
+                <div style="" class="li-div">
+                    <p class="li-p-one">我喜欢的音乐</p>
+                    <p class="li-p-two">2423首，已下载7首</p>
+                </div>
+            </li>
+            <li class="showdiv-li">
+                <img src="images/two-1.JPG" alt="">
+                <div style="" class="li-div">
+                    <p class="li-p-one">甜甜甜</p>
+                    <p class="li-p-two">17首，已下载1首</p>
+                </div>
+            </li>
+            <li class="showdiv-li">
+                <img src="images/two-2.JPG" alt="">
+                <div style="" class="li-div">
+                    <p class="li-p-one">Reset</p>
+                    <p class="li-p-two">54首</p>
+                </div>
+            </li>
+            <li class="showdiv-li">
+                <img src="images/two-3.JPG" alt="">
+                <div style="" class="li-div">
+                    <p class="li-p-one">去年今日4647</p>
+                    <p class="li-p-two">49首，已下载1首</p>
+                </div>
+            </li>
+            <li class="showdiv-li">
+                <img src="images/two-4.JPG" alt="">
+                <div style="" class="li-div">
+                    <p class="li-p-one">Forget in Memory</p>
+                    <p class="li-p-two">66首</p>
+                </div>
+            </li>
+            <li class="showdiv-li">
+                <img src="images/pic-8.JPG" alt="">
+                <div style="" class="li-div">
+                    <p class="li-p-one">咔咔咔</p>
+                    <p class="li-p-two">145首</p>
+                </div>
+            </li>
+
+            <li class="showdiv-li">
+                <img src="images/two-6.JPG" alt="">
+                <div style="" class="li-div">
+                    <p class="li-p-one">pure</p>
+                    <p class="li-p-two">32首</p>
+                </div>
+            </li>
+            <li class="showdiv-li">
+                <img src="images/two-5.JPG" alt="">
+                <div style="" class="li-div">
+                    <p class="li-p-one">Pure~</p>
+                    <p class="li-p-two">103首</p>
+                </div>
+            </li>
+
+
+        </ul>
+    </div>
+    <a href="javascript:show2()" id="change2" style="float: left">➩</a>
+    <span style="float: left">我收藏的歌单(8)</span>
+    <span style="float: right;text-align: right;">···</span>
+    <div style="clear: both"></div>
+    <div id="hidediv2" style="display:none;margin-bottom: 5rem">
+        <ul>
+            <li class="showdiv-li">
+                <img src="images/pic-1.JPG" alt="">
+                <div style="" class="li-div">
+                    <p class="li-p-one">华语速爆新歌</p>
+                    <p class="li-p-two">20首 by 网易云音乐</p>
+                </div>
+                <div style="clear: both"></div>
+            </li>
+            <li class="showdiv-li">
+                <img src="images/pic-2.JPG" alt="">
+                <div style="" class="li-div">
+                    <p class="li-p-one">甜甜甜</p>
+                    <p class="li-p-two">17首，已下载1首</p>
+
+                </div>
+                <div style="clear: both"></div>
+            </li>
+            <li class="showdiv-li">
+                <img src="images/pic-3.JPG" alt="">
+                <div style="" class="li-div">
+                    <p class="li-p-one">Reset</p>
+                    <p class="li-p-two">54首</p>
+                </div>
+                <div style="clear: both"></div>
+            </li>
+            <li class="showdiv-li">
+                <img src="images/pic-4.JPG" alt="">
+                <div style="" class="li-div">
+                    <p class="li-p-one">去年今日4647</p>
+                    <p class="li-p-two">49首，已下载1首</p>
+                </div>
+                <div style="clear: both"></div>
+            </li>
+            <li class="showdiv-li">
+                <img src="images/pic-5.JPG" alt="">
+                <div style="" class="li-div">
+                    <p class="li-p-one">Forget in Memory</p>
+                    <p class="li-p-two">66首</p>
+                </div>
+                <div style="clear: both"></div>
+            </li>
+            <li class="showdiv-li">
+                <img src="images/pic-6.JPG" alt="">
+                <div style="" class="li-div">
+                    <p class="li-p-one">咔咔咔</p>
+                    <p class="li-p-two">145首</p>
+                </div>
+                <div style="clear: both"></div>
+            </li>
+
+            <li class="showdiv-li">
+                <img src="images/pic-7.JPG" alt="">
+                <div style="" class="li-div">
+                    <p class="li-p-one">pure</p>
+                    <p class="li-p-two">32首</p>
+                </div>
+                <div style="clear: both"></div>
+            </li>
+            <li class="showdiv-li">
+                <img src="images/pic-8.JPG" alt="">
+                <div style="" class="li-div">
+                    <p class="li-p-one">Pure~</p>
+                    <p class="li-p-two">103首</p>
+                </div>
+                <div style="clear: both"></div>
+            </li>
+
+
+        </ul>
+    </div>
+    <!--<div>1111111111111</div>-->
+</div>
+<!--<aside></aside>-->
+<!--<footer id="footer"></footer>-->
+<footer id="footer" style="height:  3.6rem;">
+    <div class="footer-div fl">
+        <a href="shouye.html">
+            <img src="images/footer-1new.png" alt="">
+        </a>
+
+        <p>发现</p>
+    </div>
+    <div class="footer-div fl">
+        <img src="images/footer-2.png" alt="">
+        <p>视频</p>
+    </div>
+    <div class="footer-div fl">
+        <a href="me.html">
+            <img src="images/footer-3new.png" alt="">
+        </a>
+
+        <p>我的</p>
+    </div>
+    <div class="footer-div fl">
+        <img src="images/footer-4.png" alt="">
+        <p>朋友</p>
+    </div>
+    <div class="footer-div fl">
+
+        <a href="account.html">
+            <img src="images/footer-5.png" alt="">
+        </a>
+
+        <p>账号</p>
+    </div>
+</footer>
+<script src="js/me.js"></script>
+
+</body>
+</html>

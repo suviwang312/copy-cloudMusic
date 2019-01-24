@@ -1,0 +1,82 @@
+body{
+    margin: 0 auto;
+    padding: 0 auto;
+    background: url("../images/bg-jianbian.jpg");
+    background-size:100%;
+    /*opacity: 0.7;*/
+}
+#logo{
+    margin: 20% auto;
+}
+#method{
+    width: 100%;
+    height: 8rem;
+    /*background-color: #99a1a7;*/
+}
+#method div{
+    width: 80%;
+    height: 3rem;
+    /*background-color: #d0e9c6;*/
+    margin: 1rem auto;
+}
+.method-div button{
+    width: 100%;
+    height: 2.96rem;
+    border: 0.02rem solid #ac2925;
+    text-align: center;
+    font-size: 1rem;
+    color: #ac2925;
+    background-color: rgba(255,255,255,0.3);
+
+}
+.method-div a{
+    font-size: 1rem;
+    color: #ac2925;
+}
+#just{
+    margin: 0 auto;
+    width: 20%;
+    height: 2rem;
+    line-height: 2rem;
+    /*background-color: #99a1a7;*/
+    text-align: center;
+    /*text-decoration: underline;*/
+    color: #9d9d9d;
+    border-bottom: 0.1rem solid #99a1a7;
+}
+#just a{
+    color: #9d9d9d;
+}
+#other-log{
+    margin: 45% auto 5%;
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    /*background-color: #99a1a7;*/
+    text-align: center;
+    color: #99a1a7;
+}
+#logo-login{
+    width: 100%;
+    height: 3rem;
+    /*background-color: #ac2925;*/
+    display: flex;
+}
+#logo-login div{
+    width: 25%;
+    height: 3rem;
+    /*background-color: #e4b9b9;*/
+
+}
+.logo-login-div img{
+    margin: 0 auto;
+}
+.logo-login-div p{
+    height: 1rem;
+    width: 100%;
+    text-align: center;
+    line-height: 1rem;
+    /*background-color: #ac2925;*/
+    font-size: 0.8rem;
+    color: #99a1a7;
+}

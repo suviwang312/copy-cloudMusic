@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body,ul,li,img,p{
+            margin: 0 auto;
+            padding: 0 auto;
+        }
+        #showdiv{
+            height:400px;
+            width:300px;
+            margin: 0 auto;
+            padding:10px 0 0 0;
+        }
+        #showdiv a{
+            /*float: right;*/
+            background: lightblue;
+            height: 21px;
+            width:40px;
+            margin: 0 auto;
+            color:black;
+            text-decoration: none;
+            text-align: center;
+        }
+        #showdiv span{
+            background: lightblue;
+            width: 130px;
+            margin: 0 auto;
+        }
+        #showdiv a:hover a:visited span:hover span:visited{
+            background: powderblue;
+        }
+        #hidediv{
+            /*float: right;*/
+            background:gainsboro;
+            width:300px;
+            margin:0 auto;
+            text-align: left;
+        }
+        #hidediv li {
+            width: 300px;
+            height: 60px;
+            display: block;
+            overflow: hidden;
+            margin-left: -37px;
+            margin-bottom: 5px;
+            border-bottom: 1px solid #e8e8e8;
+        }
+
+    </style>
+</head>
+<body>
+<!--<div id="showdiv">-->
+
+    <!--<a id="change"> </a>-->
+
+    <!--<div id="hidediv"> </div>-->
+
+<!--</div>-->
+<div id="showdiv" >
+    <a href="javascript:show()" id="change" style="float: left">➩</a>
+    <span style="float: left">我创建的歌单(8)</span>
+    <span style="float: right;text-align: right">···</span>
+    <div id="hidediv" style="display:none">
+        <ul>
+            <li>
+                <img src="images/pic-9.JPG" alt="" width="60" style="float: left;margin-left: 0">
+                <div style="float: left;width: 160px;">
+                    <p>我喜欢的音乐</p>
+                    <p>2423首，已下载7首</p>
+                </div>
+
+            </li>
+            <li>
+                <img src="images/pic-9.JPG" alt="" width="60" style="float: left;margin-left: 0">
+                <div style="float: left;width: 160px;">
+                    <p>我喜欢的音乐</p>
+                    <p>2423首，已下载7首</p>
+                </div>
+
+            </li>
+            <li>
+                <img src="images/pic-9.JPG" alt="" width="60" style="float: left;margin-left: 0">
+                <div style="float: left;width: 160px;">
+                    <p>我喜欢的音乐</p>
+                    <p>2423首，已下载7首</p>
+                </div>
+
+            </li>
+            <li>
+                <img src="images/pic-9.JPG" alt="" width="60" style="float: left;margin-left: 0">
+                <div style="float: left;width: 160px;">
+                    <p>我喜欢的音乐</p>
+                    <p>2423首，已下载7首</p>
+                </div>
+
+            </li>
+            <li>搜索上一个(P)</li>
+            <li>文本搜索(X)</li>
+            <hr>
+            <li>多文本比较(C)</li>
+            <li>历史版本比较(H)</li>
+            <li>提取(T)</li>
+            <li>HTML标签规范(P)</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function show(){
+        document.getElementById("hidediv").style.display="block";
+        document.getElementById("change").innerHTML="⇩";
+        document.getElementById("change").href="javascript:hide()";
+    }
+    function hide(){
+        document.getElementById("hidediv").style.display="none";
+        document.getElementById("change").innerHTML="➩";
+        document.getElementById("change").href="javascript:show()";
+    }
+</script>
+
+</body>
+</html>

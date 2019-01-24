@@ -1,0 +1,146 @@
+body{
+    margin: 0 auto;
+    padding: 0 auto;
+    background-color: #eeeeee;
+}
+header{
+    width: 100%;
+    height: 3rem;
+    background-color: #ac2925;
+    overflow: hidden;
+    position: fixed;
+}
+header p{
+    width: 20%;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    margin-left: 40%;
+    /*background-color: yellow;*/
+    float: left;
+    color: #fff;
+}
+header img{
+    width: 8%;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    float: right;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+}
+
+#main{
+    width: 100%;
+    height: 6rem;
+    background-color: #F4F4F4;
+    display: flex;
+    padding-top: 3rem;
+}
+#main-1{
+    width: 20%;
+    height: 4rem;
+
+}
+#main-1 img{
+    width: 100%;
+
+    border-radius: 50%;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+#main-2{
+    width: 40%;
+    height: 6rem;
+    margin-left: 10%;
+    /*background-color: yellow;*/
+}
+#main-2 p{
+    width: 100%;
+    height: 2rem;
+    /*background-color: #e4b9b9;*/
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #2e2e2e;
+}
+#main-2 span{
+    width: 50%;
+    height: 1rem;
+    /*background-color: #99a1a7;*/
+    padding: 0 0.5rem;
+    border: 0.1rem solid #99a1a7;
+    border-radius: 45%;
+}
+#main-3{
+    width: 20%;
+    height: 6rem;
+    /*background-color: #99a1a7;*/
+    margin-left: 10%;
+}
+#main-3 span{
+    height: 2rem;
+    line-height: 6rem;
+    text-align: center;
+    border: 0.1rem solid #99a1a7;
+    border-radius: 20%;
+    font-size: 0.8rem;
+    color: #2e2e2e;
+}
+#nav{
+    width: 100%;
+    height: 3rem;
+    background-color: #FCFCFC;
+    display: flex;
+    border: 0.1rem solid #f0f0f0;
+}
+.nav-div{
+    width: 20%;
+    height: 2rem;
+    /*background-color: #e4b9b9;*/
+    margin: 0.5rem 2%;
+    border-right: 0.1rem solid #f0f0f0;
+    font-size: 0.9rem;
+}
+.nav-div p{
+    text-align: center;
+}
+.nav-div span{
+    width: 100%;
+}
+.nav-div-img{
+    width: 1rem;
+    text-align: center;
+}
+#nav-div-last{
+    margin-left: 8%    ;
+    width: 20%;
+    font-size: 0.9rem;
+}
+#nav-div-last img{
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+/*????????????*/
+#section{
+    width: 100%;
+}
+.section-div{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    background-color: #F5F5F5;
+    border-bottom: 0.1rem solid #eee;
+}
+.section-div img{
+    width: 7%;
+    height: 1.6rem;
+    padding-left: 3%;
+    margin-top: 0.7rem;
+}
+.section-div span{
+    width: 76%;
+    height: 1.6rem;
+    padding-left: 3%;
+    margin-top: 0.7rem;
+}

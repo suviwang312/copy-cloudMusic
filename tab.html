@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .tab_menu .selected {
+            background-color: #aaa;
+        }
+
+        .tab_menu ul {
+            height: 30px;
+        }
+
+        .tab_menu ul li {
+            float: left;
+            list-style: none;
+            width: 50px;
+            height: 30px;
+            color: #000;
+            border: solid 1px gray;
+            border-bottom: none;
+            text-align: center;
+            line-height: 30px;
+            margin-right: 3px;
+        }
+
+        .tab_menu ul li a {
+            text-decoration: none;
+        }
+
+        .tab_box {
+            width: 170px;
+            height: 150px;
+            border: solid 1px gray;
+        }
+
+        .tab_box .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="tab">
+    <div class="tab_menu">
+        <ul>
+            <li class="selected"><a href="#">时事</a></li>
+            <li><a href="#">体育</a></li>
+            <li><a href="#">娱乐</a></li>
+        </ul>
+    </div>
+    <div class="tab_box">
+        <div>时事</div>
+        <div class="hide">体育</div>
+        <div class="hide">娱乐</div>
+    </div>
+</div>
+<script>
+    window.onload = function () {
+        var oTab = document.getElementById('tab');
+        var aLi = oTab.getElementsByTagName('li');
+        var oTabBox = oTab.getElementsByTagName('div')[1];
+        var aBox = oTabBox.getElementsByTagName('div');
+        for (var i = 0; i < aLi.length; i++) {
+            aLi[i].index = i;
+            aLi[i].onclick = function () {
+                for (var j = 0; j < aLi.length; j++) {
+                    aLi[j].className = '';//取消菜单样式
+     aBox[j].className='hide';//隐藏所有的tabDiv
+     }
+     aLi[this.index].className='selected'; aBox[this.index].className='';
+            }
+        }
+    }
+</script>
+</body>
+</html><!---->

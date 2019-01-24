@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img id="lamp" onClick="changeImage()" src="images/footer-1new.png">
+<p>点击图片关灯或开灯</p>
+<script>
+    function changeImage()
+    {
+        var element=document.getElementById("lamp");
+        if(element.src.match("footer-1new.png"))
+            element.src="images/footer-1.png";
+        else
+            element.src="images/footer-1new.png";
+    }
+</script>
+
+
+
+</body>
+</html>

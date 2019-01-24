@@ -1,0 +1,274 @@
+html{
+    /*font-size:20px;*/
+}
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+#box1{
+    width: 100%;
+    /* height: 5.1rem; */
+    /* float: left; */
+    background-color: rgb(218,65,55);
+    position: fixed;
+    /* margin-top: -5.1rem; */
+    z-index: 999;
+    top: 0;
+}
+.box1-img{
+    float: left;
+    width: 8%;
+    padding-left: 0.3rem;
+    padding-top: 0.3rem;
+}
+#input1{
+    float: left;
+    width: 75%;
+    height: 1.5rem;
+    float: left;
+    border-radius: 2rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    padding-top: 0.2rem;
+    background-color: rgba(161,47,47,0.3);
+    text-align: center;
+    color: rgba(196,226,216,0.6);
+    font-size: 0.7rem;
+}
+
+#box1-below{
+    width: 100%;
+    margin-top: 3rem;
+    height: 1.7rem;
+    background-color: rgb(218,65,55);
+    /*border: 1px solid #2e2e2e;*/
+}
+.box1-b-r{
+    width: 50%;
+    height: 100%;
+    line-height: 1.7rem;
+    font-size: 0.8rem;
+    color: white;
+    text-align: center;
+}
+#box2{
+    width: 100%;
+    height: 7.5rem;
+    float: left;
+    background-color: #00FFFF;
+    font-size: 0.6rem;
+}
+#box3{
+    width: 100%;
+    height: 5rem;
+    float: left;
+    /*background-color: #B22222;*/
+    background-color: #F2F2F2;
+}
+.box3-one{
+    width: 12%;
+    height: 3.5rem;
+    margin-top: 0.8rem;
+    text-align: center;
+    margin-left: 10%;
+}
+.box3-o-1{
+    width: 100%;
+    margin-right: 10%;
+    background-color: rgb(218,65,55);
+    border-radius: 50%;
+    height: 2.4rem;
+    box-shadow: 3px -2px 6px #888888;
+}
+
+.box3-one p{
+    width: 100%;
+    text-align: center;
+    font-size: 0.6rem;
+    color: #2e2e2e;
+}
+.box3-one img{
+    width: 48%;
+    margin: 0 auto;
+    /*background-color: #B22222;*/
+
+    /* background-color: #B22222; */
+    text-align: center;
+    padding-top: 0.7rem;
+}
+#box4{
+    width: 100%;
+    height: 18rem;
+    float: left;
+    background-color: #BFBFBF;
+
+}
+#box4-title,#box5-title{
+    width: 100%;
+    height: 2rem;
+    background-color: #F0FFF0;
+    line-height: 2rem;
+}
+.box4-title{
+    font-size: 1.0rem;
+    font-weight: bold;
+    padding-left: 0.3rem;
+}
+#box5{
+    width: 100%;
+    height: 10rem;
+    float: left;
+    /*background-color: cadetblue;*/
+    /*最后一个盒子写*/
+    /*margin-bottom: 4rem;*/
+}
+#box5-img{
+    width: 10%;
+    height: 2rem;
+}
+#box5-title{
+    width: 90%;
+}
+
+#box6{
+    width: 100%;
+    height: 10rem;
+    float: left;
+    /*background-color: cadetblue;*/
+    /*最后一个盒子写*/
+    /*margin-bottom: 4rem;*/
+}
+#box6-img{
+    width: 10%;
+    height: 2rem;
+}
+#box6-title{
+    width: 90%;
+    height: 2rem;
+    line-height: 2rem   ;
+}
+.box4-img{
+    width: 0.9rem;
+    margin-top: 0.5rem;
+    height: 0.9rem;
+    margin-left: 0.5rem;
+
+}
+
+/*???????????json??????????*/
+ul{
+    list-style: none;
+}
+ul,p,h3{
+    padding: 0;
+    margin: 0;
+}
+img{
+    border: none;
+    display: block;
+}
+.mlist{
+    width: 100%;
+    height: 16rem;
+    background-color: #eeeeee;
+    overflow: hidden;
+}
+.mlist img{
+    margin: 0 auto;
+    width: 100%;
+    height: 5.8rem;
+    /*height:3.5rem;*/
+    /*margin-right: 10px;*/
+}
+.mlist li{
+    border-bottom: 0.1rem solid #269abc;
+    padding-top: 0.3rem;
+    /*margin-bottom: 0.3rem;*/
+    position: relative;
+    height: 7.4rem;
+    float: left;
+    width: 30%;
+    margin-left: 0.5rem;
+}
+
+.mlist p{
+    font-size: 0.6rem;
+    /*line-height: 32px;*/
+    color: #2e2e2e;
+    padding-left: 0.3rem;
+    text-indent: 1em;
+    text-align: center;
+    height: 1.5rem;
+}
+a{
+    text-decoration: none;
+    color: #030;
+}
+.mlist-1{
+    width: 100%;
+    height: 8rem;
+    background-color: #e4b9b9;
+    overflow: hidden;
+}
+.mlist-1 img{
+    margin: 0 auto;
+    width: 100%;
+    height: 6.5rem;
+    /*height:3.5rem;*/
+    /*margin-right: 10px;*/
+}
+.mlist-1 li{
+    border-bottom: 0.1rem solid #269abc;
+    padding-top: 0.3rem;
+    /*margin-bottom: 0.3rem;*/
+    position: relative;
+    height: 7.4rem;
+    float: left;
+    width: 30%;
+    margin-left: 0.5rem;
+}
+
+.mlist-1 p{
+    font-size: 0.6rem;
+    /*line-height: 32px;*/
+    color: #2e2e2e;
+    padding-left: 0.3rem;
+    text-indent: 1em;
+    text-align: center;
+    height: 1.5rem;
+}
+/*页脚*/
+#footer{
+    width: 100%;
+    height: 2.5rem;
+    background-color: #eeeeee;
+    position: fixed;
+    bottom: 0;
+}
+.footer-div{
+    width: 20%;
+    height: 2rem;
+    /*background-color: yellow;*/
+
+}
+.footer-div img{
+    margin: 4% auto;
+    width: 40%;
+
+}
+.footer-div p{
+    width: 100%;
+    height: 1rem;
+    /*background-color: #99a1a7;*/
+    text-align: center;
+    font-size: 0.6rem;
+    color: #2e2e2e;
+    margin-top: 0;
+}

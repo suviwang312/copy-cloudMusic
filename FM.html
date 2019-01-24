@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Cache-Control" content="max-age=180">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <link rel="stylesheet" href="css/FM.css">
+    <title>FM</title>
+</head>
+<body>
+<header>
+    <a href="shouye.html">
+        <img src="images/left.png" alt="">
+    </a>
+
+    <div class="header-div"><img src="images/1-FM.png" alt=""><p>私人FM</p></div>
+    <div class="header-div"><img src="images/1-music.png" alt=""><p>跑步FM</p></div>
+    <span class="header-span"  onclick="openDialog()">···</span>
+    <!--<div class="demo-bg"></div>-->
+    <div class="demo-txt">
+        <!--<button id="btn" onclick="closeDialog()">关闭弹窗</button>-->
+        <div class="tishi">
+            <p>歌曲：你看不到的天空</p>
+            <p style="color: #666666;font-size: 0.8rem">您已开通音乐包，可播放及下载该歌曲</p>
+        </div>
+        <ul id="demo-txt-ul">
+            <li><img src="images/extra-1.png" alt=""><span>收藏到歌单</span></li>
+            <li><img src="images/extra-2.png" alt=""><span>下载</span></li>
+            <li><img src="images/extra-3.png" alt=""><span>分享</span></li>
+            <li><img src="images/extra-4.png" alt=""><span>歌手：丁芙妮</span></li>
+            <li><img src="images/extra-5.png" alt=""><span>丁芙妮</span></li>
+            <li><img src="images/extra-6.png" alt=""><span>音质：自动选择</span></li>
+            <li><img src="images/extra-7.png" alt=""><span>查看视频</span></li>
+            <li><img src="images/extra-8.png" alt=""><span>定时关机</span></li>
+            <li><img src="images/extra-9.png" alt=""><span>打开驾车模式</span></li>
+        </ul>
+        <div class="btn" id="close">
+            <span onclick="closeDialog()">关闭</span>
+
+        </div>
+    </div>
+
+</header>
+<main>
+    <img src="images/pic-8.JPG" alt="">
+    <p class="main-p1">你看不到的天空（CMY）</p>
+    <p class="main-p2">丁芙妮 ></p>
+</main>
+<div id="audio-div">
+    <!--<audio src="F:\KuGou\李玉刚 - 刚好遇见你.mp3 " controls autoplay="true"></audio><br/>-->
+    <audio  src="MP4/test.flac" controls="controls" id="music"></audio>
+</div>
+<div id="footer">
+    <img src="images/FM-1.png" alt="">
+    <img src="images/FM-2.png" alt="" id="heart" onClick="changeImage()">
+    <img src="images/FM-3change.png" alt=""  id="playing"  class="xixi" onclick="play()">
+    <img src="images/FM-4.png" alt="">
+    <img src="images/FM-5.png" alt="">
+</div>
+<script>
+
+    // var demobg = document.querySelector(".demo-bg");
+    var demotxt = document.querySelector(".demo-txt");
+    function openDialog() {
+        demotxt.style.display = "block";
+        // demobg.style.display = "block";
+    }
+
+    function closeDialog() {
+        demotxt.style.display = "none";
+        // demobg.style.display = "none";
+    }
+
+</script>
+
+
+
+<script src="js/FM.js"></script>
+</body>
+</html>

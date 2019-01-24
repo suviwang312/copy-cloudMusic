@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .xixi{
+            position: absolute;
+            top: 0;
+            width: 50px;
+            height: 50px;
+            background-color: #2e2e2e;
+        }
+    </style>
+</head>
+<body>
+<!--定义音频，src为你要播放的音乐-->
+<audio src="MP4/test.flac" id="music" ></audio>
+<!--img标签为控制音频的一个按钮-->
+<img src="images/FM-3.png" class="xixi" onclick="play()" />
+<script>
+    function play(){
+        //获取到你所定义的音频标签
+        var audios = document.getElementById("music");
+        //获取到img标签
+        var xixi = document.querySelector(".xixi");
+        //判断音频是否停止
+        if(audios.paused){
+            //如果已停止则播放音频并更换图标
+            xixi.src = "imgs/musicBtn.png";
+            audios.play();         }else{
+            //如果已停止重新加载音频并关闭音频和更换图标
+            xixi.src = "imgs/musicBtnOff.png";
+            audios.pause();
+            audios.load();
+        }
+    }
+</script>
+</body>
+</html>
