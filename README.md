@@ -3,18 +3,18 @@
 
 ## 展示
 ###  首页
- ![image](https://github.com/AliceRachel/copy-cloudMusic/tree/master/photo/首页.png)
+ ![首页](https://github.com/AliceRachel/copy-cloudMusic/blob/master/photo/index.png)
 
 ###  私人FM
- ![image](https://github.com/AliceRachel/copy-cloudMusic/tree/master/photo/私人FM.png)
+ ![私人FM](https://github.com/AliceRachel/copy-cloudMusic/blob/master/photo/fm.png)
 
 ###  本地音乐
- ![image](https://github.com/AliceRachel/copy-cloudMusic/tree/master/photo.png)
+ ![本地音乐](https://github.com/AliceRachel/copy-cloudMusic/blob/master/photo/music.png)
 
 ###  账户
- ![image](https://github.com/AliceRachel/copy-cloudMusic/tree/master/photo/账户.png)
+ ![账户](https://github.com/AliceRachel/copy-cloudMusic/blob/master/photo/account.png)
 
 ###  我的
- ![image](https://github.com/AliceRachel/copy-cloudMusic/tree/master/photo/我的.png)
+ ![我的](https://github.com/AliceRachel/copy-cloudMusic/blob/master/photo/me.png)
 
 
